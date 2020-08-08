@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="modal">
+        <div class="modal-body">
+          <h1>You <span id="playerResult"></span></h1>
+          <span id="play-again-btn">Play Again</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="score">
+          <div>
+            <span class="player-score">0</span>
+            <h5>Player</h5>
+          </div>
+          <div>
+            <span class="ai-score">0</span>
+            <h5>AI</h5>
+          </div>
+        </div>
+
+        <div class="options">
+          <div class="option" id="rock" data-name="rock">
+            ✊🏽
+          </div>
+          <div class="option" id="paper" data-name="paper">
+            ✋🏽
+          </div>
+          <div class="option" id="scissors" data-name="scissors">
+            ✌🏽
+          </div>
+        </div>
+
+        <div class="history">
+          <div class="player-choice-wrapper"></div>
+          <div class="result"></div>
+          <div class="ai-choice-wrapper"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
